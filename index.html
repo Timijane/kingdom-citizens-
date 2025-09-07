@@ -184,13 +184,11 @@
     setInterval(changeScripture, 6000); // change every 6s
   </script>
 
-</body>
-</html>
-<!-- ================= ABOUT SECTION ================= -->
-<section id="about" style="background-color: #006400; color: white; padding: 60px 20px;">
+  <!-- ================= ABOUT SECTION ================= -->
+<section id="about" style="background-color:#006400; color:white; padding:60px 20px; font-family:Arial, sans-serif;">
 
-  <!-- Responsive Navbar (3-line menu) -->
-  <nav style="position: absolute; top: 20px; right: 20px;">
+  <!-- Responsive Navbar (hamburger) -->
+  <nav style="position:fixed; top:20px; right:20px; z-index:1000;">
     <button onclick="document.getElementById('navMenu').classList.toggle('open')" 
             style="background:none; border:none; cursor:pointer;">
       <div style="width:30px; height:4px; background:gold; margin:6px 0;"></div>
@@ -205,13 +203,7 @@
     </div>
   </nav>
   <script>
-    // Make menu toggle work
-    document.querySelectorAll("#navMenu a").forEach(link => {
-      link.addEventListener("click", () => {
-        document.getElementById("navMenu").classList.remove("open");
-        document.getElementById("navMenu").style.display = "none";
-      });
-    });
+    // Menu toggle
     document.querySelector("nav button").addEventListener("click", () => {
       const menu = document.getElementById("navMenu");
       menu.style.display = (menu.style.display === "block") ? "none" : "block";
@@ -219,46 +211,47 @@
   </script>
 
   <!-- Mandate with Logo -->
-  <div style="text-align:center; margin-bottom: 50px;">
+  <div style="text-align:center; margin-bottom:60px; margin-top:60px;">
     <img src="logo1.jpg" alt="Church Logo" 
-         style="width:140px; height:140px; border-radius:50%; margin-bottom:20px;">
+         style="width:140px; height:140px; border-radius:50%; margin-bottom:20px; border:3px solid gold;">
     <h2 style="color: gold; font-size: 30px; font-weight: bold; margin-bottom: 15px;">Our Mandate</h2>
-    <p style="background: gold; color: #006400; display:inline-block; padding: 15px 25px; border-radius: 12px; font-size: 18px; max-width: 800px;">
+    <p style="background: gold; color:#006400; display:inline-block; padding: 15px 25px; border-radius: 12px; font-size: 18px; max-width: 800px;">
       To restore the lost soul and destinies back to Christ’s Kingdom for preservation through the preaching of the Word of Faith.
     </p>
   </div>
 
   <!-- Vision and Mission -->
-  <div style="text-align:center; margin-bottom: 50px;">
-    <h2 style="color: gold; font-size: 30px; font-weight: bold; margin-bottom: 10px;">Our Vision</h2>
-    <p style="background: gold; color: #006400; display:inline-block; padding: 12px 20px; border-radius: 10px; font-size: 18px; max-width: 800px;">
+  <div style="text-align:center; margin-bottom: 60px;">
+    <h2 style="color: gold; font-size: 28px; font-weight: bold; margin-bottom: 15px;">Our Vision</h2>
+    <p style="background: gold; color:#006400; display:inline-block; padding: 12px 20px; border-radius: 10px; font-size: 18px; max-width: 800px;">
       To develop Christians full of Faith.
     </p>
 
-    <h2 style="color: gold; font-size: 30px; font-weight: bold; margin: 30px 0 10px;">Our Mission</h2>
-    <p style="background: gold; color: #006400; display:inline-block; padding: 12px 20px; border-radius: 10px; font-size: 18px; max-width: 800px;">
+    <h2 style="color: gold; font-size: 28px; font-weight: bold; margin: 30px 0 15px;">Our Mission</h2>
+    <p style="background: gold; color:#006400; display:inline-block; padding: 12px 20px; border-radius: 10px; font-size: 18px; max-width: 800px;">
       To nurture the heir.
     </p>
   </div>
 
   <!-- Remark -->
   <div style="text-align:center; margin-bottom: 60px;">
-    <h2 style="color: gold; font-size: 30px; font-weight: bold; margin-bottom: 15px;">About the Church</h2>
-    <p style="background: gold; color: #006400; display:inline-block; padding: 15px 25px; border-radius: 12px; font-size: 18px; max-width: 900px; line-height: 1.6;">
-      Kingdom Citizens Church International, located at Wole Iredele Street, Abiola, Abeokuta, Ogun State, Nigeria, is a family of believers passionate about the Kingdom of God. 
-      We are committed to raising Christians rooted in faith, walking in destiny, and living as heirs of the Kingdom.
+    <h2 style="color: gold; font-size: 28px; font-weight: bold; margin-bottom: 15px;">About the Church</h2>
+    <p style="background: gold; color:#006400; display:inline-block; padding: 15px 25px; border-radius: 12px; font-size: 18px; max-width: 900px; line-height: 1.6;">
+      Kingdom Citizens Church International, located at Wole Iredele Street, Abiola, Abeokuta, Ogun State, Nigeria, 
+      is a family of believers passionate about the Kingdom of God. We are committed to raising Christians rooted in faith, 
+      walking in destiny, and living as heirs of the Kingdom.
     </p>
   </div>
 
   <!-- Meet Our Pastors -->
-  <div style="text-align:center;">
+  <div style="text-align:center; margin-bottom: 60px;">
     <h2 style="color: gold; font-size: 32px; font-weight: bold; margin-bottom: 40px;">Meet Our Pastors</h2>
     <div style="display:flex; flex-wrap:wrap; justify-content:center; gap:30px;">
 
       <!-- Pastor Sam Balogun -->
       <div style="text-align:center; max-width:220px;">
         <img src="balogun.jpg" alt="Pastor Sam Balogun" 
-             style="width:180px; height:180px; border-radius:50%; object-fit:cover; margin-bottom:15px;">
+             style="width:180px; height:180px; border-radius:50%; object-fit:cover; margin-bottom:15px; border:3px solid gold;">
         <h3 style="color: gold; font-size: 20px; font-weight: bold;">Pastor Sam Balogun</h3>
         <p style="background: gold; color:#006400; padding:10px; border-radius:8px; font-size:16px;">
           Founder and Senior Pastor of Kingdom Citizens Church International, a visionary leader with a passion for faith and kingdom impact.
@@ -268,7 +261,7 @@
       <!-- Pastor Felicia Balogun -->
       <div style="text-align:center; max-width:220px;">
         <img src="felicia.jpg" alt="Pastor Mrs Felicia Balogun" 
-             style="width:180px; height:180px; border-radius:50%; object-fit:cover; margin-bottom:15px;">
+             style="width:180px; height:180px; border-radius:50%; object-fit:cover; margin-bottom:15px; border:3px solid gold;">
         <h3 style="color: gold; font-size: 20px; font-weight: bold;">Pastor Mrs Felicia Balogun</h3>
         <p style="background: gold; color:#006400; padding:10px; border-radius:8px; font-size:16px;">
           Co-founder and mother in faith, with a heart for nurturing believers and strengthening families in Christ.
@@ -278,7 +271,7 @@
       <!-- Pastor Wale Somoye -->
       <div style="text-align:center; max-width:220px;">
         <img src="wale.jpg" alt="Pastor Wale Somoye" 
-             style="width:180px; height:180px; border-radius:50%; object-fit:cover; margin-bottom:15px;">
+             style="width:180px; height:180px; border-radius:50%; object-fit:cover; margin-bottom:15px; border:3px solid gold;">
         <h3 style="color: gold; font-size: 20px; font-weight: bold;">Pastor Wale Somoye</h3>
         <p style="background: gold; color:#006400; padding:10px; border-radius:8px; font-size:16px;">
           Resident Pastor, currently leading the Osara branch with dedication and faith-driven leadership.
@@ -288,7 +281,7 @@
       <!-- Pastor Peter Oluwakunbi -->
       <div style="text-align:center; max-width:220px;">
         <img src="peter.jpg" alt="Pastor Peter Oluwakunbi" 
-             style="width:180px; height:180px; border-radius:50%; object-fit:cover; margin-bottom:15px;">
+             style="width:180px; height:180px; border-radius:50%; object-fit:cover; margin-bottom:15px; border:3px solid gold;">
         <h3 style="color: gold; font-size: 20px; font-weight: bold;">Pastor Peter Oluwakunbi</h3>
         <p style="background: gold; color:#006400; padding:10px; border-radius:8px; font-size:16px;">
           Youth Pastor, passionate about empowering the next generation of believers with the Word of God.
@@ -307,3 +300,5 @@
   </div>
 </section>
 <!-- ================= END ABOUT SECTION ================= -->
+</body>
+</html>
