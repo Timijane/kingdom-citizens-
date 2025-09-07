@@ -186,280 +186,124 @@
 
 </body>
 </html>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>About Us - Kingdom Citizens Church International</title>
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
+<!-- ================= ABOUT SECTION ================= -->
+<section id="about" style="background-color: #006400; color: white; padding: 60px 20px;">
 
-    body {
-      font-family: Arial, sans-serif;
-      background-color: #004d00; /* deep green */
-      color: #333;
-      line-height: 1.6;
-    }
-
-    header {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      background: #004d00;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 15px 30px;
-      z-index: 1000;
-    }
-
-    .logo-text {
-      color: gold;
-      font-weight: bold;
-      font-size: 1.2rem;
-    }
-
-    /* Hamburger Menu */
-    .menu-toggle {
-      display: none;
-      flex-direction: column;
-      cursor: pointer;
-    }
-
-    .menu-toggle span {
-      width: 25px;
-      height: 3px;
-      background: gold;
-      margin: 4px 0;
-    }
-
-    nav {
-      display: flex;
-      gap: 20px;
-    }
-
-    nav a {
-      color: gold;
-      text-decoration: none;
-      font-weight: bold;
-    }
-
-    nav a:hover {
-      text-decoration: underline;
-    }
-
-    /* Responsive menu */
-    @media (max-width: 768px) {
-      nav {
-        display: none;
-        flex-direction: column;
-        background: #004d00;
-        position: absolute;
-        top: 60px;
-        right: 0;
-        width: 200px;
-        padding: 15px;
-      }
-      nav.active {
-        display: flex;
-      }
-      .menu-toggle {
-        display: flex;
-      }
-    }
-
-    /* Section styling */
-    section {
-      background: gold;
-      margin: 80px auto 40px;
-      padding: 40px 20px;
-      width: 90%;
-      max-width: 1000px;
-      border-radius: 10px;
-      text-align: center;
-    }
-
-    section h2 {
-      color: #004d00;
-      font-size: 2rem;
-      margin-bottom: 20px;
-      font-weight: bold;
-    }
-
-    section p {
-      color: #333;
-      font-size: 1.1rem;
-    }
-
-    /* Pastors Section */
-    .pastors {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-      gap: 30px;
-      margin-top: 30px;
-    }
-
-    .pastor-card {
-      background: white;
-      padding: 20px;
-      border-radius: 10px;
-      text-align: center;
-      box-shadow: 0px 4px 8px rgba(0,0,0,0.2);
-    }
-
-    .pastor-card img {
-      width: 150px;
-      height: 150px;
-      border-radius: 50%;
-      object-fit: cover;
-      border: 4px solid gold;
-      margin-bottom: 15px;
-    }
-
-    .pastor-card h3 {
-      margin: 10px 0;
-      color: #004d00;
-    }
-
-    .pastor-card p {
-      font-size: 0.95rem;
-      color: #333;
-    }
-
-    /* Logo inside Mandate */
-    .mandate-logo {
-      display: block;
-      margin: 0 auto 20px;
-      width: 120px;
-      height: 120px;
-      border-radius: 50%;
-      object-fit: cover;
-      border: 3px solid white;
-    }
-  </style>
-</head>
-<body>
-
-  <!-- Header -->
-  <header>
-    <div class="logo-text">KCCI</div>
-    <div class="menu-toggle" id="menu-toggle">
-      <span></span>
-      <span></span>
-      <span></span>
+  <!-- Responsive Navbar (3-line menu) -->
+  <nav style="position: absolute; top: 20px; right: 20px;">
+    <button onclick="document.getElementById('navMenu').classList.toggle('open')" 
+            style="background:none; border:none; cursor:pointer;">
+      <div style="width:30px; height:4px; background:gold; margin:6px 0;"></div>
+      <div style="width:30px; height:4px; background:gold; margin:6px 0;"></div>
+      <div style="width:30px; height:4px; background:gold; margin:6px 0;"></div>
+    </button>
+    <div id="navMenu" style="display:none; position:absolute; right:0; background:#006400; border:2px solid gold; border-radius:8px; padding:10px;">
+      <a href="#home" style="color:gold; display:block; padding:8px; text-decoration:none;">Home</a>
+      <a href="#about" style="color:gold; display:block; padding:8px; text-decoration:none;">About</a>
+      <a href="departments.html" style="color:gold; display:block; padding:8px; text-decoration:none;">Departments</a>
+      <a href="#contact" style="color:gold; display:block; padding:8px; text-decoration:none;">Contact</a>
     </div>
-    <nav id="nav">
-      <a href="index.html">Home</a>
-      <a href="about.html">About</a>
-      <a href="#">Services</a>
-      <a href="#">Contact</a>
-    </nav>
-  </header>
-
-  <!-- Intro Section -->
-  <section>
-    <h2>Welcome to Kingdom Citizens Church International</h2>
-    <p>
-      Kingdom Citizens Church International is a vibrant family of faith, committed to raising Christians full of faith and 
-      nurturing the heirs of God’s Kingdom. We are located at Wole Iredele Street, Abiola, Abeokuta, Ogun State, Nigeria.
-    </p>
-  </section>
-
-  <!-- Vision Section -->
-  <section>
-    <h2>Our Vision</h2>
-    <p>To develop Christians full of Faith.</p>
-  </section>
-
-  <!-- Mission Section -->
-  <section>
-    <h2>Our Mission</h2>
-    <p>To nurture the heir.</p>
-  </section>
-
-  <!-- Mandate Section -->
-  <section>
-    <img src="logo1.jpg" alt="Church Logo" class="mandate-logo">
-    <h2>Our Mandate</h2>
-    <p>
-      To restore the lost soul and destinies back to Christ’s Kingdom for preservation 
-      through the preaching of the Word of Faith.
-    </p>
-  </section>
-
-  <!-- Pastors Section -->
-  <section>
-    <h2>Meet Our Pastors</h2>
-    <div class="pastors">
-      <!-- Pastor Balogun -->
-      <div class="pastor-card">
-        <img src="balogun.jpg" alt="Pastor Sam Balogun">
-        <h3>Pastor Sam Balogun</h3>
-        <p>Founder of Kingdom Citizens Church International, a seasoned minister of faith dedicated to raising kingdom heirs.</p>
-      </div>
-
-      <!-- Pastor Felicia -->
-      <div class="pastor-card">
-        <img src="felicia.jpg" alt="Pastor Mrs Felicia Balogun">
-        <h3>Pastor Mrs Felicia Balogun</h3>
-        <p>Co-Founder, a mother in faith and strong support in nurturing believers in God’s Word and prayer.</p>
-      </div>
-
-      <!-- Pastor Wale -->
-      <div class="pastor-card">
-        <img src="wale.jpg" alt="Pastor Wale Somoye">
-        <h3>Pastor Wale Somoye</h3>
-        <p>Resident Pastor and head of the Osara branch, known for his passion for teaching and pastoral care.</p>
-      </div>
-
-      <!-- Pastor Peter -->
-      <div class="pastor-card">
-        <img src="peter.jpg" alt="Pastor Peter Oluwakunbi">
-        <h3>Pastor Peter Oluwakunbi</h3>
-        <p>Youth Pastor, inspiring and equipping the younger generation to grow in faith and walk boldly in Christ.</p>
-      </div>
-    </div>
-  </section>
-
+  </nav>
   <script>
-    // Toggle menu
-    const menuToggle = document.getElementById("menu-toggle");
-    const nav = document.getElementById("nav");
-
-    menuToggle.addEventListener("click", () => {
-      nav.classList.toggle("active");
+    // Make menu toggle work
+    document.querySelectorAll("#navMenu a").forEach(link => {
+      link.addEventListener("click", () => {
+        document.getElementById("navMenu").classList.remove("open");
+        document.getElementById("navMenu").style.display = "none";
+      });
+    });
+    document.querySelector("nav button").addEventListener("click", () => {
+      const menu = document.getElementById("navMenu");
+      menu.style.display = (menu.style.display === "block") ? "none" : "block";
     });
   </script>
-  <!-- Departments Button Section -->
-<section>
-  <h2>Explore More</h2>
-  <p>Discover the different groups and ministries that make up our church family.</p>
-  <a href="departments.html" class="dept-btn">See Our Departments & Groups</a>
+
+  <!-- Mandate with Logo -->
+  <div style="text-align:center; margin-bottom: 50px;">
+    <img src="logo1.jpg" alt="Church Logo" 
+         style="width:140px; height:140px; border-radius:50%; margin-bottom:20px;">
+    <h2 style="color: gold; font-size: 30px; font-weight: bold; margin-bottom: 15px;">Our Mandate</h2>
+    <p style="background: gold; color: #006400; display:inline-block; padding: 15px 25px; border-radius: 12px; font-size: 18px; max-width: 800px;">
+      To restore the lost soul and destinies back to Christ’s Kingdom for preservation through the preaching of the Word of Faith.
+    </p>
+  </div>
+
+  <!-- Vision and Mission -->
+  <div style="text-align:center; margin-bottom: 50px;">
+    <h2 style="color: gold; font-size: 30px; font-weight: bold; margin-bottom: 10px;">Our Vision</h2>
+    <p style="background: gold; color: #006400; display:inline-block; padding: 12px 20px; border-radius: 10px; font-size: 18px; max-width: 800px;">
+      To develop Christians full of Faith.
+    </p>
+
+    <h2 style="color: gold; font-size: 30px; font-weight: bold; margin: 30px 0 10px;">Our Mission</h2>
+    <p style="background: gold; color: #006400; display:inline-block; padding: 12px 20px; border-radius: 10px; font-size: 18px; max-width: 800px;">
+      To nurture the heir.
+    </p>
+  </div>
+
+  <!-- Remark -->
+  <div style="text-align:center; margin-bottom: 60px;">
+    <h2 style="color: gold; font-size: 30px; font-weight: bold; margin-bottom: 15px;">About the Church</h2>
+    <p style="background: gold; color: #006400; display:inline-block; padding: 15px 25px; border-radius: 12px; font-size: 18px; max-width: 900px; line-height: 1.6;">
+      Kingdom Citizens Church International, located at Wole Iredele Street, Abiola, Abeokuta, Ogun State, Nigeria, is a family of believers passionate about the Kingdom of God. 
+      We are committed to raising Christians rooted in faith, walking in destiny, and living as heirs of the Kingdom.
+    </p>
+  </div>
+
+  <!-- Meet Our Pastors -->
+  <div style="text-align:center;">
+    <h2 style="color: gold; font-size: 32px; font-weight: bold; margin-bottom: 40px;">Meet Our Pastors</h2>
+    <div style="display:flex; flex-wrap:wrap; justify-content:center; gap:30px;">
+
+      <!-- Pastor Sam Balogun -->
+      <div style="text-align:center; max-width:220px;">
+        <img src="balogun.jpg" alt="Pastor Sam Balogun" 
+             style="width:180px; height:180px; border-radius:50%; object-fit:cover; margin-bottom:15px;">
+        <h3 style="color: gold; font-size: 20px; font-weight: bold;">Pastor Sam Balogun</h3>
+        <p style="background: gold; color:#006400; padding:10px; border-radius:8px; font-size:16px;">
+          Founder and Senior Pastor of Kingdom Citizens Church International, a visionary leader with a passion for faith and kingdom impact.
+        </p>
+      </div>
+
+      <!-- Pastor Felicia Balogun -->
+      <div style="text-align:center; max-width:220px;">
+        <img src="felicia.jpg" alt="Pastor Mrs Felicia Balogun" 
+             style="width:180px; height:180px; border-radius:50%; object-fit:cover; margin-bottom:15px;">
+        <h3 style="color: gold; font-size: 20px; font-weight: bold;">Pastor Mrs Felicia Balogun</h3>
+        <p style="background: gold; color:#006400; padding:10px; border-radius:8px; font-size:16px;">
+          Co-founder and mother in faith, with a heart for nurturing believers and strengthening families in Christ.
+        </p>
+      </div>
+
+      <!-- Pastor Wale Somoye -->
+      <div style="text-align:center; max-width:220px;">
+        <img src="wale.jpg" alt="Pastor Wale Somoye" 
+             style="width:180px; height:180px; border-radius:50%; object-fit:cover; margin-bottom:15px;">
+        <h3 style="color: gold; font-size: 20px; font-weight: bold;">Pastor Wale Somoye</h3>
+        <p style="background: gold; color:#006400; padding:10px; border-radius:8px; font-size:16px;">
+          Resident Pastor, currently leading the Osara branch with dedication and faith-driven leadership.
+        </p>
+      </div>
+
+      <!-- Pastor Peter Oluwakunbi -->
+      <div style="text-align:center; max-width:220px;">
+        <img src="peter.jpg" alt="Pastor Peter Oluwakunbi" 
+             style="width:180px; height:180px; border-radius:50%; object-fit:cover; margin-bottom:15px;">
+        <h3 style="color: gold; font-size: 20px; font-weight: bold;">Pastor Peter Oluwakunbi</h3>
+        <p style="background: gold; color:#006400; padding:10px; border-radius:8px; font-size:16px;">
+          Youth Pastor, passionate about empowering the next generation of believers with the Word of God.
+        </p>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Departments Button -->
+  <div style="text-align:center; margin-top: 60px;">
+    <a href="departments.html" 
+       style="background: gold; color: #006400; padding: 15px 30px; border-radius: 25px; font-size: 20px; font-weight: bold; text-decoration: none; transition: 0.3s;">
+      Visit Our Departments & Groups
+    </a>
+  </div>
 </section>
-
-<style>
-  .dept-btn {
-    display: inline-block;
-    margin-top: 15px;
-    padding: 12px 25px;
-    background: #004d00;
-    color: gold;
-    font-weight: bold;
-    text-decoration: none;
-    border-radius: 5px;
-    transition: 0.3s;
-  }
-
-  .dept-btn:hover {
-    background: gold;
-    color: #004d00;
-  }
-</style>
-</body>
-</html>
+<!-- ================= END ABOUT SECTION ================= -->
