@@ -186,3 +186,255 @@
 
 </body>
 </html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us - Kingdom Citizens Church International</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #004d00; /* deep green */
+      color: #333;
+      line-height: 1.6;
+    }
+
+    header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      background: #004d00;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 30px;
+      z-index: 1000;
+    }
+
+    .logo-text {
+      color: gold;
+      font-weight: bold;
+      font-size: 1.2rem;
+    }
+
+    /* Hamburger Menu */
+    .menu-toggle {
+      display: none;
+      flex-direction: column;
+      cursor: pointer;
+    }
+
+    .menu-toggle span {
+      width: 25px;
+      height: 3px;
+      background: gold;
+      margin: 4px 0;
+    }
+
+    nav {
+      display: flex;
+      gap: 20px;
+    }
+
+    nav a {
+      color: gold;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    /* Responsive menu */
+    @media (max-width: 768px) {
+      nav {
+        display: none;
+        flex-direction: column;
+        background: #004d00;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        width: 200px;
+        padding: 15px;
+      }
+      nav.active {
+        display: flex;
+      }
+      .menu-toggle {
+        display: flex;
+      }
+    }
+
+    /* Section styling */
+    section {
+      background: gold;
+      margin: 80px auto 40px;
+      padding: 40px 20px;
+      width: 90%;
+      max-width: 1000px;
+      border-radius: 10px;
+      text-align: center;
+    }
+
+    section h2 {
+      color: #004d00;
+      font-size: 2rem;
+      margin-bottom: 20px;
+      font-weight: bold;
+    }
+
+    section p {
+      color: #333;
+      font-size: 1.1rem;
+    }
+
+    /* Pastors Section */
+    .pastors {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 30px;
+      margin-top: 30px;
+    }
+
+    .pastor-card {
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      text-align: center;
+      box-shadow: 0px 4px 8px rgba(0,0,0,0.2);
+    }
+
+    .pastor-card img {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 4px solid gold;
+      margin-bottom: 15px;
+    }
+
+    .pastor-card h3 {
+      margin: 10px 0;
+      color: #004d00;
+    }
+
+    .pastor-card p {
+      font-size: 0.95rem;
+      color: #333;
+    }
+
+    /* Logo inside Mandate */
+    .mandate-logo {
+      display: block;
+      margin: 0 auto 20px;
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 3px solid white;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="logo-text">KCCI</div>
+    <div class="menu-toggle" id="menu-toggle">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <nav id="nav">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="#">Services</a>
+      <a href="#">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Intro Section -->
+  <section>
+    <h2>Welcome to Kingdom Citizens Church International</h2>
+    <p>
+      Kingdom Citizens Church International is a vibrant family of faith, committed to raising Christians full of faith and 
+      nurturing the heirs of God’s Kingdom. We are located at Wole Iredele Street, Abiola, Abeokuta, Ogun State, Nigeria.
+    </p>
+  </section>
+
+  <!-- Vision Section -->
+  <section>
+    <h2>Our Vision</h2>
+    <p>To develop Christians full of Faith.</p>
+  </section>
+
+  <!-- Mission Section -->
+  <section>
+    <h2>Our Mission</h2>
+    <p>To nurture the heir.</p>
+  </section>
+
+  <!-- Mandate Section -->
+  <section>
+    <img src="logo1.jpg" alt="Church Logo" class="mandate-logo">
+    <h2>Our Mandate</h2>
+    <p>
+      To restore the lost soul and destinies back to Christ’s Kingdom for preservation 
+      through the preaching of the Word of Faith.
+    </p>
+  </section>
+
+  <!-- Pastors Section -->
+  <section>
+    <h2>Meet Our Pastors</h2>
+    <div class="pastors">
+      <!-- Pastor Balogun -->
+      <div class="pastor-card">
+        <img src="balogun.jpg" alt="Pastor Sam Balogun">
+        <h3>Pastor Sam Balogun</h3>
+        <p>Founder of Kingdom Citizens Church International, a seasoned minister of faith dedicated to raising kingdom heirs.</p>
+      </div>
+
+      <!-- Pastor Felicia -->
+      <div class="pastor-card">
+        <img src="felicia.jpg" alt="Pastor Mrs Felicia Balogun">
+        <h3>Pastor Mrs Felicia Balogun</h3>
+        <p>Co-Founder, a mother in faith and strong support in nurturing believers in God’s Word and prayer.</p>
+      </div>
+
+      <!-- Pastor Wale -->
+      <div class="pastor-card">
+        <img src="wale.jpg" alt="Pastor Wale Somoye">
+        <h3>Pastor Wale Somoye</h3>
+        <p>Resident Pastor and head of the Osara branch, known for his passion for teaching and pastoral care.</p>
+      </div>
+
+      <!-- Pastor Peter -->
+      <div class="pastor-card">
+        <img src="peter.jpg" alt="Pastor Peter Oluwakunbi">
+        <h3>Pastor Peter Oluwakunbi</h3>
+        <p>Youth Pastor, inspiring and equipping the younger generation to grow in faith and walk boldly in Christ.</p>
+      </div>
+    </div>
+  </section>
+
+  <script>
+    // Toggle menu
+    const menuToggle = document.getElementById("menu-toggle");
+    const nav = document.getElementById("nav");
+
+    menuToggle.addEventListener("click", () => {
+      nav.classList.toggle("active");
+    });
+  </script>
+</body>
+</html>
