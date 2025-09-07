@@ -57,10 +57,15 @@
       transform: translateY(-50%);
     }
 
+    /* Logo styling */
     .hero-content img {
-      width: 200px;
-      height: auto;
-      margin-bottom: 20px;
+      width: 120px;          /* smaller size */
+      height: 120px;         /* fixed height */
+      border-radius: 50%;    /* round logo */
+      object-fit: cover;     /* keeps proportion inside circle */
+      margin-bottom: 15px;
+      margin-top: -40px;     /* moves it upward */
+      border: 3px solid white; /* optional border for elegance */
     }
 
     .hero-content h1 {
